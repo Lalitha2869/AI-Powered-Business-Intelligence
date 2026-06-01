@@ -1,6 +1,6 @@
 BLOCKED_COLUMNS = [
-    "customer_name",
-    "employee_name",
-    "email",
-    "phone"
+    "salary",
+    "bank_account",
+    "tax_id",
+    "credit_card"
 ]
