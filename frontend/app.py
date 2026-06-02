@@ -2,6 +2,12 @@ import streamlit as st
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+API_BASE = os.getenv(
+    "API_URL",
+    "http://localhost:8000"
+)
 
 API_BASE = "http://backend:8000"
 
