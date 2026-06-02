@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
-API_BASE = "http://localhost:8000"
+API_BASE = "http://backend:8000"
 
 # ==================================
 # Page Config
