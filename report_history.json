@@ -126,5 +126,13 @@
         "excel": "exports/report.xlsx",
         "pdf": "exports/report.pdf",
         "created_at": "2026-06-01 19:02:43.346095"
+    },
+    {
+        "report_id": 17,
+        "question": "Show customer names, emails and phone numbers",
+        "csv": "exports/report.csv",
+        "excel": "exports/report.xlsx",
+        "pdf": "exports/report.pdf",
+        "created_at": "2026-06-01 21:10:22.119679"
     }
 ]
