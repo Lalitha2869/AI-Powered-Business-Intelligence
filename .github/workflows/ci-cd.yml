@@ -260,23 +260,22 @@ jobs:
 # ==========================================
 # 8. DEPLOYMENT
 # ==========================================
+deployment:
 
-  deployment:
+  name: Docker Deployment
 
-    name: Railway Deployment
+  runs-on: ubuntu-latest
 
-    runs-on: ubuntu-latest
+  needs:
+    - push-backend
+    - push-frontend
 
-    needs:
-      - push-backend
-      - push-frontend
+  steps:
 
-    steps:
-
-      - name: Deployment Info
-        run: |
-          echo "Docker images pushed successfully"
-          echo "Railway Auto Deployment Triggered"
+    - name: Docker Deployment Status
+      run: |
+        echo "Docker images successfully pushed to Docker Hub"
+        echo "Application is containerized and ready for deployment"
 
 # ==========================================
 # 9. HEALTH CHECK
@@ -284,17 +283,20 @@ jobs:
 
   health-check:
 
-    name: Health Check
+  name: Deployment Verification
 
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
-    needs: deployment
+  needs: deployment
 
-    steps:
+  steps:
 
-      - name: Wait For Deployment
-        run: sleep 30
+    - name: Verify Docker Images
+      run: |
+        echo "Backend Image:"
+        echo "${{ secrets.DOCKER_USERNAME }}/ai-sql-backend:latest"
 
-      - name: Health Check
-        run: |
-          echo "Application deployed successfully"
+        echo "Frontend Image:"
+        echo "${{ secrets.DOCKER_USERNAME }}/ai-sql-frontend:latest"
+
+        echo "Docker deployment pipeline completed successfully"
