@@ -292,8 +292,8 @@ def query(
                 0,
                 "FAILED"
             )
-        except:
-            pass
+        except Exception as e:
+            print(f"Error: {e}")
 
         raise HTTPException(
             status_code=400,

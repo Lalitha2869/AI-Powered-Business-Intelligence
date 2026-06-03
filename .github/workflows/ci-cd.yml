@@ -130,7 +130,7 @@ jobs:
 
       - name: Security Scan
         run: |
-          bandit -r backend/
+          bandit -r backend/ -ll
 
 # ==========================================
 # 4. BACKEND BUILD & PUSH

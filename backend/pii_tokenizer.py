@@ -35,7 +35,7 @@ class PIITokenizer:
 
         else:
 
-            token = "TOKEN_UNKNOWN"
+            token = "UNKNOWN_VALUE"
 
         return token
 
