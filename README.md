@@ -222,7 +222,7 @@ python main.py
 cd frontend
 streamlit run app.py
 ```
-
+<pre>
 👑 Admin Tests
 Login:
 admin / admin123
@@ -318,4 +318,4 @@ Show total revenue by region
 Show top products by revenue
 Show customer details
 Then open:
-Analytics Dashboard
+Analytics Dashboard</pre>
