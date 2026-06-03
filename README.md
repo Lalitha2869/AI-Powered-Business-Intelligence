@@ -1,4 +1,4 @@
-## Natural Language to SQL BI Assistant
+### Natural Language to SQL BI Assistant
 
 An AI-powered business intelligence assistant that converts natural language questions into SQL, validates queries for safety, executes them on PostgreSQL, and returns results as tables, charts, and insights.
 
