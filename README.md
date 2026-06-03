@@ -319,3 +319,9 @@ Show top products by revenue
 Show customer details
 Then open:
 Analytics Dashboard</pre>
+
+## Screenshots
+<img width="1920" height="1080" alt="UI1" src="https://github.com/user-attachments/assets/23a972cc-d1fc-451e-9b39-eabf7db72a8d" />
+
+<img width="1920" height="1080" alt="UI2" src="https://github.com/user-attachments/assets/297b4bff-f980-42a4-be42-fa3b39f98ad5" />
+
