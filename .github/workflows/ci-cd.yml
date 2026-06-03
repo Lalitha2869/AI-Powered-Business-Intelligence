@@ -280,8 +280,7 @@ deployment:
 # ==========================================
 # 9. HEALTH CHECK
 # ==========================================
-
-  health-check:
+health-check:
 
   name: Deployment Verification
 
@@ -300,3 +299,6 @@ deployment:
         echo "${{ secrets.DOCKER_USERNAME }}/ai-sql-frontend:latest"
 
         echo "Docker deployment pipeline completed successfully"
+
+
+###
