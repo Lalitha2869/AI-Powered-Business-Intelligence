@@ -126,11 +126,7 @@ ai-sql-assistant/
 ├── requirements.txt
 └── README.md
 ```
-## Installation
-```bash
-git clone <repo-url>
-cd <repo-folder>
-pip install -r requirements.txt
+
 ```
 ## Folder Explanations
 
@@ -203,13 +199,16 @@ Stores runtime logs for debugging, audit, and traceability.
 - Business charts and insights.
 - Streamlit-based user interface.
 
+
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/Lalitha2869/AI-Powered-Business-Intelligence.git
 cd ai-sql-assistant
 pip install -r requirements.txt
 ```
+
+
 
 ## Run the project
 
@@ -222,6 +221,35 @@ python main.py
 cd frontend
 streamlit run app.py
 ```
+# Running Using Docker Images
+
+## Pull Backend Image
+
+docker pull lalitha2869/ai-backend:latest
+
+## Pull Frontend Image
+
+docker pull lalitha2869/ai-frontend:latest
+
+## Run Backend
+
+docker run -d -p 8000:8000 \
+--name ai-backend \
+lalitha2869/ai-backend:latest
+
+## Run Frontend
+
+docker run -d -p 8501:8501 \
+--name ai-frontend \
+lalitha2869/ai-frontend:latest
+
+## Access Application
+
+Frontend:
+http://localhost:8501
+
+Backend API Docs:
+http://localhost:8000/docs
 <pre>
 👑 Admin Tests
 Login:
